@@ -1,0 +1,6 @@
+framework module Pods_Mini_Projeto_1_xmpp {
+  umbrella header "Pods-Mini Projeto 1 xmpp-umbrella.h"
+
+  export *
+  module * { export * }
+}

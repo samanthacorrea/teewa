@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_0" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Frases_do_Dia" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" image="aspas-direita.png" translatesAutoresizingMaskIntoConstraints="NO" id="y3J-m7-Gkd">
+                                <rect key="frame" x="16" y="204" width="96" height="94"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" image="aspas-esquerda.png" translatesAutoresizingMaskIntoConstraints="NO" id="r8c-Ke-CxA">
+                                <rect key="frame" x="208" y="454" width="96" height="94"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZMU-IN-xgD">
+                                <rect key="frame" x="76" y="156" width="167" height="30"/>
+                                <state key="normal" title="Nova frase"/>
+                                <connections>
+                                    <action selector="geraFrase:" destination="BYZ-38-t0r" eventType="touchUpInside" id="KHX-gQ-j5Y"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pgs-q8-17c">
+                                <rect key="frame" x="16" y="339" width="288" height="76"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="logo.png" translatesAutoresizingMaskIntoConstraints="NO" id="kSV-Ai-aQM">
+                                <rect key="frame" x="40" y="20" width="240" height="128"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="ZMU-IN-xgD" firstAttribute="top" secondItem="kSV-Ai-aQM" secondAttribute="bottom" constant="8" id="Bfq-CE-3yk"/>
+                            <constraint firstItem="y3J-m7-Gkd" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="Ctd-o5-XHF"/>
+                            <constraint firstItem="r8c-Ke-CxA" firstAttribute="top" secondItem="pgs-q8-17c" secondAttribute="bottom" constant="39" id="L2E-5z-gHw"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="kSV-Ai-aQM" secondAttribute="trailing" constant="24" id="QHy-kj-ssa"/>
+                            <constraint firstItem="pgs-q8-17c" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="e9w-sE-Mrg"/>
+                            <constraint firstAttribute="trailing" secondItem="r8c-Ke-CxA" secondAttribute="trailing" constant="16" id="g0m-Fi-b0t"/>
+                            <constraint firstItem="kSV-Ai-aQM" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="kjr-UU-4hX"/>
+                            <constraint firstItem="pgs-q8-17c" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="tjm-BN-jjP"/>
+                            <constraint firstItem="kSV-Ai-aQM" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="24" id="xfs-1S-54G"/>
+                            <constraint firstItem="pgs-q8-17c" firstAttribute="top" secondItem="y3J-m7-Gkd" secondAttribute="bottom" constant="41" id="xjk-3q-TKm"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="legenda" destination="pgs-q8-17c" id="yw9-Xd-Q45"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="135" y="138.38028169014083"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="aspas-direita.png" width="57" height="54"/>
+        <image name="aspas-esquerda.png" width="56" height="55"/>
+        <image name="logo.png" width="253" height="140"/>
+    </resources>
+</document>
