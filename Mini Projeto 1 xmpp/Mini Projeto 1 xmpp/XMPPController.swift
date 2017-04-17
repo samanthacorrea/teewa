@@ -80,4 +80,8 @@ class XMPPController: NSObject, XMPPStreamDelegate {
         self.xmppStream.send(presence)
     }
     
+    func xmppStream(_ sender: XMPPStream!, didReceive message: XMPPMessage!) {
+        print("message")
+    }
+    
 }

@@ -13,6 +13,8 @@
 		5A0297B11E97D03800DAC43B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5A0297B01E97D03800DAC43B /* Assets.xcassets */; };
 		5A0297B41E97D03800DAC43B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5A0297B21E97D03800DAC43B /* LaunchScreen.storyboard */; };
 		5A475E451E9D730600780EEC /* ChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A475E441E9D730600780EEC /* ChatViewController.swift */; };
+		5AED65D81E9EAA2300DF4687 /* OneMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AED65D71E9EAA2300DF4687 /* OneMessage.swift */; };
+		5AED65DA1E9EAD9B00DF4687 /* OneConnection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AED65D91E9EAD9B00DF4687 /* OneConnection.swift */; };
 		5AFFAE251E9D18B9008DB33D /* XMPPController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AFFAE241E9D18B9008DB33D /* XMPPController.swift */; };
 		F8A70644DFA775D99538F10F /* Pods_Mini_Projeto_1_xmpp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 15F6D63792B6A72A3DF4E30F /* Pods_Mini_Projeto_1_xmpp.framework */; };
 /* End PBXBuildFile section */
@@ -27,6 +29,8 @@
 		5A0297B31E97D03800DAC43B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5A0297B51E97D03800DAC43B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5A475E441E9D730600780EEC /* ChatViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatViewController.swift; sourceTree = "<group>"; };
+		5AED65D71E9EAA2300DF4687 /* OneMessage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OneMessage.swift; sourceTree = "<group>"; };
+		5AED65D91E9EAD9B00DF4687 /* OneConnection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OneConnection.swift; sourceTree = "<group>"; };
 		5AFFAE241E9D18B9008DB33D /* XMPPController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XMPPController.swift; sourceTree = "<group>"; };
 		F627A6635A98FA5A2DBB05F7 /* Pods-Mini Projeto 1 xmpp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Mini Projeto 1 xmpp.release.xcconfig"; path = "Pods/Target Support Files/Pods-Mini Projeto 1 xmpp/Pods-Mini Projeto 1 xmpp.release.xcconfig"; sourceTree = "<group>"; };
 		FC63AF5357DD7C93BAB12D92 /* Pods-Mini Projeto 1 xmpp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Mini Projeto 1 xmpp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Mini Projeto 1 xmpp/Pods-Mini Projeto 1 xmpp.debug.xcconfig"; sourceTree = "<group>"; };
@@ -66,6 +70,7 @@
 			isa = PBXGroup;
 			children = (
 				5A0297A91E97D03800DAC43B /* AppDelegate.swift */,
+				5AED65D71E9EAA2300DF4687 /* OneMessage.swift */,
 				5A0297AB1E97D03800DAC43B /* ViewController.swift */,
 				5A0297AD1E97D03800DAC43B /* Main.storyboard */,
 				5A0297B01E97D03800DAC43B /* Assets.xcassets */,
@@ -73,6 +78,7 @@
 				5A0297B51E97D03800DAC43B /* Info.plist */,
 				5AFFAE241E9D18B9008DB33D /* XMPPController.swift */,
 				5A475E441E9D730600780EEC /* ChatViewController.swift */,
+				5AED65D91E9EAD9B00DF4687 /* OneConnection.swift */,
 			);
 			path = "Mini Projeto 1 xmpp";
 			sourceTree = "<group>";
@@ -219,7 +225,9 @@
 			files = (
 				5A0297AC1E97D03800DAC43B /* ViewController.swift in Sources */,
 				5A0297AA1E97D03800DAC43B /* AppDelegate.swift in Sources */,
+				5AED65DA1E9EAD9B00DF4687 /* OneConnection.swift in Sources */,
 				5A475E451E9D730600780EEC /* ChatViewController.swift in Sources */,
+				5AED65D81E9EAA2300DF4687 /* OneMessage.swift in Sources */,
 				5AFFAE251E9D18B9008DB33D /* XMPPController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

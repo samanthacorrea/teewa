@@ -21,6 +21,16 @@ class ChatViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
+    @IBOutlet weak var remetente: UITextField!
+    @IBOutlet weak var mensagens_enviadas: UILabel!
+    @IBOutlet weak var mensagem_digitada: UITextField!
+    
+    @IBAction func botaoEnviar(_ sender: Any) {
+        print("remetente: " + remetente.text!)
+        print("mensagens enviadas: " + mensagens_enviadas.text!)
+        print("mensagem digitada: " + mensagem_digitada.text!)
+        
+    }
 
     /*
     // MARK: - Navigation
